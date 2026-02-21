@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Kenangan Kita</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Inline styles for specific gallery overrides or unique elements */
+        body {
+            background-color: #f5f7fa;
+            /* Light background */
+            color: #333;
+        }
+
+        .gallery-nav {
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .back-btn {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: color 0.3s;
+        }
+
+        .back-btn:hover {
+            color: #1abc9c;
+            /* Cyan hover */
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 3rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .gallery-card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .gallery-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-img-container {
+            height: 200px;
+            background: #eee;
+            position: relative;
+        }
+
+        .gallery-img-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        .gallery-content {
+            padding: 1.5rem;
+        }
+
+        .gallery-title {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #1abc9c;
+            /* Cyan title from reference */
+            margin-bottom: 0.5rem;
+        }
+
+        .gallery-desc {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
+        }
+
+        .gallery-stats {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #eee;
+            padding-top: 1rem;
+            color: #95a5a6;
+            font-size: 0.85rem;
+        }
+
+        .gallery-stat {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .gallery-icon-overlay {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="gallery-nav">
+        <a href="index.html" class="back-btn">
+            <span>←</span> Kembali
+        </a>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 1.5rem;">Semua Kenangan</h2>
+        <div style="width: 80px;"></div> <!-- Spacer for centering -->
+    </nav>
+
+    <div class="gallery-grid">
+        <!-- Gallery Items mimicking the reference -->
+
+        <!-- Card 1 -->
+        <div class="gallery-card">
+            <div class="gallery-img-container">
+                <img src="assets/jajang1.jpeg" alt="Kenangan 1" style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="gallery-icon-overlay">📷</div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="gallery-card">
+            <div class="gallery-img-container">
+                <img src="assets/jajang2.jpeg" alt="Kenangan 2" style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="gallery-icon-overlay">📷</div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="gallery-card">
+            <div class="gallery-img-container">
+                <img src="assets/jajang3.jpeg" alt="Kenangan 3" style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="gallery-icon-overlay">📷</div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="gallery-card">
+            <div class="gallery-img-container">
+                <img src="assets/jajang4.jpeg" alt="Kenangan 4" style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="gallery-icon-overlay">📷</div>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="gallery-card">
+            <div class="gallery-img-container">
+                <img src="assets/jajang5.jpeg" alt="Kenangan 5" style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="gallery-icon-overlay">📷</div>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="gallery-card">
+            <div class="gallery-img-container">
+                <img src="assets/jajang6.jpeg" alt="Kenangan 6" style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="gallery-icon-overlay">📷</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Audio Player (same as index.html) -->
+    <div class="audio-player" style="position:fixed;bottom:2rem;right:2rem;z-index:100;">
+        <audio id="bg-music" loop>
+            <source src="assets/Sheila on 7 - Dan (Official Music Video) [dGcGbF4ex5o].mp3" type="audio/mpeg">
+        </audio>
+        <button id="music-btn"
+            style="background:rgba(43,21,32,0.9);border:1px solid #e8849e;color:#f0d6df;padding:0.8rem 1.2rem;border-radius:30px;cursor:pointer;font-family:'Inter',sans-serif;font-size:0.9rem;backdrop-filter:blur(5px);display:flex;align-items:center;gap:0.5rem;">
+            <span id="music-icon">🎵</span> Play Music
+        </button>
+    </div>
+
+    <script>
+        // Auto-resume music from index.html
+        const bgMusic = document.getElementById('bg-music');
+        const musicBtn = document.getElementById('music-btn');
+
+        // Check if music was playing on previous page
+        const wasPlaying = localStorage.getItem('musicPlaying') === 'true';
+        const savedTime = parseFloat(localStorage.getItem('musicTime') || '0');
+
+        if (wasPlaying && bgMusic) {
+            bgMusic.currentTime = savedTime;
+            bgMusic.play().then(() => {
+                musicBtn.innerHTML = '<span id="music-icon">⏸️</span> Pause Music';
+            }).catch(err => {
+                console.log('Autoplay blocked:', err);
+            });
+        }
+
+        // Toggle music
+        musicBtn.addEventListener('click', () => {
+            if (!bgMusic.paused) {
+                bgMusic.pause();
+                musicBtn.innerHTML = '<span id="music-icon">🎵</span> Play Music';
+                localStorage.setItem('musicPlaying', 'false');
+            } else {
+                bgMusic.play().then(() => {
+                    musicBtn.innerHTML = '<span id="music-icon">⏸️</span> Pause Music';
+                    localStorage.setItem('musicPlaying', 'true');
+                }).catch(err => console.log(err));
+            }
+        });
+
+        // Save music state continuously
+        setInterval(() => {
+            if (bgMusic && !bgMusic.paused) {
+                localStorage.setItem('musicTime', bgMusic.currentTime);
+                localStorage.setItem('musicPlaying', 'true');
+            }
+        }, 500);
+
+        // Save state before leaving page
+        window.addEventListener('beforeunload', () => {
+            localStorage.setItem('musicTime', bgMusic.currentTime);
+            localStorage.setItem('musicPlaying', (!bgMusic.paused).toString());
+        });
+    </script>
+
+</body>
+
+</html>
